@@ -83,17 +83,7 @@ class Simulation:
                 self.print_state()
             self.execute_next_event()
             
-    #Execute the next event in the queue
-    #(Get next event, and execute appropriate method depending on event type)
-    def execute_next_event(self):
-        event = self.events.get_next_event()
-        self.clock = event.time
-        if event.type == ARRIVAL:
-            self.execute_arrival(event)
-        if event.type == DEPARTURE:
-            self.execute_departure(event)
-        if event.type == STOP:
-            self.execute_stop(event)
+  
 
     #Driver leaving intersection event
     def execute_departure(self, event):
