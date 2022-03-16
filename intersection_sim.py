@@ -321,3 +321,7 @@ class Simulation:
 
 def average(L):
     return sum(L)/len(L)
+
+'''
+change suggested to the file
+'''
