@@ -26,32 +26,6 @@ PRINT_EVENTS = False
 
 class Driver:
 
-    stop_time = 5
-    clear_time = 10
-
-    def __init__(self, name, arrival_time):
-        self.name = name
-        self.arrival_time = arrival_time
-    
-    #Returns driver instance stop time
-    def get_stop_time(self):
-        return self.stop_time
-
-    #Returns driver instance clear time
-    def get_clear_time(self):
-        return self.clear_time
-
-
-class Event:
-
-    def __init__(self, event_type, time, direction):
-        self.type = event_type
-        self.time = time
-        self.direction = direction 
-
-
-class EventQueue:
-
     def __init__(self):
         self.events = []
 
